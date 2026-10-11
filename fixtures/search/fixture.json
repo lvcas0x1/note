@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "id": "kafka/deploy",
+      "title": "Kafka deploy",
+      "date": "2026-10-05",
+      "summary": "Running brokers.",
+      "tags": ["kafka"],
+      "text": "Kafka deploy. Brokers, topics, and partitions on three nodes."
+    },
+    {
+      "id": "notes/streams",
+      "title": "Stream notes",
+      "date": "2026-10-05",
+      "summary": "Event streams.",
+      "tags": [],
+      "text": "Stream notes. We compared kafka with other brokers; kafka won."
+    },
+    {
+      "id": "jp/memo",
+      "title": "日本語メモ",
+      "date": "2026-10-11",
+      "summary": "日本語の説明",
+      "tags": ["memo"],
+      "text": "日本語メモ。これは日本語のテキストです。全文検索の確認。"
+    },
+    {
+      "id": "web/escape",
+      "title": "HTML escaping",
+      "date": "2026-09-30",
+      "summary": "Escaping rules.",
+      "tags": ["web"],
+      "text": "HTML escaping. Never trust <script>alert(1)</script> in user input & attributes."
+    },
+    {
+      "id": "aws/s3",
+      "title": "S3 buckets",
+      "date": "2025-03-14",
+      "summary": "Bucket policies.",
+      "tags": ["aws", "storage"],
+      "text": "S3 buckets. A bucket policy grants access; use OR conditions carefully (with NEAR care)."
+    },
+    {
+      "id": "go/basics",
+      "title": "Go basics",
+      "date": "2026-10-01",
+      "summary": "Hello world.",
+      "tags": ["golang"],
+      "text": "Go basics. func main() { fmt.Println(\"hello\") }"
+    }
+  ]
+}

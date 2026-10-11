@@ -1,0 +1,41 @@
+{
+  "name": "notes",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.19.0",
+  "engines": {
+    "node": ">=24.15.0 <25",
+    "npm": ">=11.19.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "oxlint": "1.87.0",
+    "oxlint-tsgolint": "7.0.2004",
+    "prettier": "3.9.10",
+    "typescript": "7.0.2"
+  },
+  "scripts": {
+    "lint": "oxlint && npm run lint:go",
+    "lint:go": "cd server && golangci-lint run ./...",
+    "typecheck": "tsc -b --force",
+    "test": "npm run test --workspaces --if-present && npm run test:go",
+    "test:go": "cd server && go test ./...",
+    "format": "prettier --write .",
+    "check": "node scripts/check-no-dark.mjs && node scripts/check-deps.mjs && node scripts/openapi.mjs --check && npm ls --all >/dev/null && prettier --check . && npm run check --workspaces --if-present",
+    "build:go": "cd server && CGO_ENABLED=0 go build ./...",
+    "generate:openapi": "node scripts/openapi.mjs",
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/start.mjs",
+    "build:content": "cd server && go run ./cmd/notes stamp-dates --content ../content && go run ./cmd/notes build --content ../content --data ../data",
+    "export": "node scripts/export.mjs",
+    "preview:static": "node scripts/preview-static.mjs"
+  },
+  "overrides": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

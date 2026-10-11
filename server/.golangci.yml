@@ -1,0 +1,24 @@
+version: "2"
+linters:
+  default: standard
+  enable:
+    - bodyclose
+    - errorlint
+    - gosec
+    - misspell
+    - revive
+  settings:
+    gosec:
+      excludes:
+        # The build and export commands read and write operator-chosen paths by design.
+        # Paths that come from content are checked with content.ResolveInside instead.
+        - G304
+        - G703
+  exclusions:
+    rules:
+      - path: _test\.go
+        linters: [gosec, bodyclose]
+formatters:
+  enable:
+    - gofmt
+    - goimports

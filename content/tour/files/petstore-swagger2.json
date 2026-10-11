@@ -1,0 +1,30 @@
+{
+  "swagger": "2.0",
+  "info": { "title": "Pet API", "version": "1.0" },
+  "basePath": "/v1",
+  "paths": {
+    "/pets": {
+      "get": {
+        "summary": "List pets",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "array", "items": { "$ref": "#/definitions/Pet" } }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a pet",
+        "parameters": [{ "in": "body", "name": "pet", "schema": { "$ref": "#/definitions/Pet" } }],
+        "responses": { "201": { "description": "Created" } }
+      }
+    }
+  },
+  "definitions": {
+    "Pet": {
+      "type": "object",
+      "required": ["name"],
+      "properties": { "name": { "type": "string" }, "tag": { "type": "string" } }
+    }
+  }
+}

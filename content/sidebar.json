@@ -1,0 +1,391 @@
+[
+  {
+    "title": "AI",
+    "children": [
+      {
+        "title": "OpenAI",
+        "path": "ai/azureopenai.md"
+      },
+      {
+        "title": "Bedrock",
+        "path": "ai/bedrock.md"
+      },
+      {
+        "title": "Claude",
+        "path": "ai/claude.md"
+      },
+      {
+        "title": "Gemini",
+        "path": "ai/gemini.md"
+      },
+      {
+        "title": "Semantic Kernel",
+        "path": "ai/semantickernel.md"
+      },
+      {
+        "title": "Speech-to-Text",
+        "path": "ai/speechtotext.md"
+      }
+    ]
+  },
+  {
+    "title": "Ansible",
+    "children": [
+      {
+        "title": "01.Connection",
+        "path": "ansible/01.connection.md"
+      }
+    ]
+  },
+  {
+    "title": "Architecture",
+    "children": [
+      {
+        "title": "API",
+        "path": "architecture/api/api.md"
+      },
+      {
+        "title": "REST",
+        "path": "architecture/rest/rest.md"
+      },
+      {
+        "title": "GRPC",
+        "path": "architecture/grpc/grpc.md"
+      },
+      {
+        "title": "GraphQL",
+        "path": "architecture/graphql/graphql.md"
+      },
+      {
+        "title": "Microfrontend",
+        "path": "architecture/microfrontend/microfrontend.md"
+      },
+      {
+        "title": "Microservices",
+        "path": "architecture/microservices/microservices.md"
+      },
+      {
+        "title": "Domain Driven Design",
+        "path": "architecture/domaindrivendesign/domaindrivendesign.md"
+      },
+      {
+        "title": "Software Architecture",
+        "path": "architecture/softwarearchitecture/softwarearchitecture.md"
+      }
+    ]
+  },
+  {
+    "title": "Auth",
+    "children": [
+      {
+        "title": "SAML",
+        "path": "auth/saml.md"
+      },
+      {
+        "title": "OAuth",
+        "path": "auth/oauth.md"
+      },
+      {
+        "title": "OIDC",
+        "path": "auth/oidc.md"
+      },
+      {
+        "title": "JWT",
+        "path": "auth/jwt.md"
+      }
+    ]
+  },
+  {
+    "title": "AWS",
+    "children": [
+      {
+        "title": "CLI",
+        "path": "aws/cli/cli.md"
+      },
+      {
+        "title": "DynamoDB",
+        "path": "aws/dynamodb/dynamodb.md"
+      },
+      {
+        "title": "ECS",
+        "path": "aws/ecs/ecs.md"
+      },
+      {
+        "title": "Glue",
+        "path": "aws/glue/glue.md"
+      },
+      {
+        "title": "IAM",
+        "path": "aws/iam/iam.md"
+      },
+      {
+        "title": "Lambda",
+        "path": "aws/lambda/lambda.md"
+      },
+      {
+        "title": "NAT",
+        "path": "aws/nat/nat.md"
+      },
+      {
+        "title": "S3",
+        "path": "aws/s3/s3.md"
+      },
+      {
+        "title": "Session Manager",
+        "path": "aws/sessionmanager/sessionmanager.md"
+      },
+      {
+        "title": "VPC",
+        "path": "aws/vpc/vpc.md"
+      },
+      {
+        "title": "CloudOps",
+        "path": "aws/certification/cloudops.md"
+      }
+    ]
+  },
+  {
+    "title": "Azure",
+    "children": [
+      {
+        "title": "App Service",
+        "path": "azure/appservice/appservice.md"
+      },
+      {
+        "title": "Certifications",
+        "children": [
+          {
+            "title": "AI 102",
+            "path": "azure/certifications/ai102/ai102.md"
+          },
+          {
+            "title": "AI 900",
+            "path": "azure/certifications/ai900/ai900.md"
+          },
+          {
+            "title": "DP 203",
+            "path": "azure/certifications/dp203/dp203.md"
+          },
+          {
+            "title": "DP 900",
+            "path": "azure/certifications/dp900/dp900.md"
+          }
+        ]
+      },
+      {
+        "title": "RDS MFA",
+        "children": [
+          {
+            "title": "AD Connector",
+            "path": "azure/rdsmfa/adconnector/adconnector.md"
+          },
+          {
+            "title": "Azure AD",
+            "path": "azure/rdsmfa/azuread/azuread.md"
+          }
+        ]
+      },
+      {
+        "title": "VM",
+        "path": "azure/virtualmachine/virtualmachine.md"
+      }
+    ]
+  },
+  {
+    "title": "Container",
+    "children": [
+      {
+        "title": "Docker",
+        "path": "container/docker/docker.md"
+      }
+    ]
+  },
+  {
+    "title": "Git",
+    "children": [
+      {
+        "title": "Github",
+        "path": "git/github/github.md"
+      }
+    ]
+  },
+  {
+    "title": "Golang",
+    "children": [
+      {
+        "title": "Basic",
+        "path": "golang/basic/basic.md"
+      },
+      {
+        "title": "Practical",
+        "path": "golang/practical/practical.md"
+      },
+      {
+        "title": "Tips",
+        "path": "golang/tips/tips.md"
+      }
+    ]
+  },
+  {
+    "title": "Kafka",
+    "children": [
+      {
+        "title": "Deploy",
+        "path": "kafka/deploy/deploy.md"
+      }
+    ]
+  },
+  {
+    "title": "Kubernetes",
+    "children": [
+      {
+        "title": "CKA",
+        "path": "kubernetes/cka/cka.md"
+      },
+      {
+        "title": "CKAD",
+        "path": "kubernetes/ckad/ckad.md"
+      },
+      {
+        "title": "Cluster",
+        "path": "kubernetes/cluster/cluster.md"
+      },
+      {
+        "title": "Flux",
+        "path": "kubernetes/flux/flux.md"
+      }
+    ]
+  },
+  {
+    "title": "NextJS",
+    "children": [
+      {
+        "title": "AuthJS",
+        "path": "nextjs/authjs/authjs.md"
+      },
+      {
+        "title": "OpenAPI",
+        "path": "nextjs/openapi/openapi.md"
+      },
+      {
+        "title": "Prisma",
+        "path": "nextjs/prisma/prisma.md"
+      },
+      {
+        "title": "Storybook",
+        "path": "nextjs/storybook/storybook.md"
+      },
+      {
+        "title": "Tips",
+        "path": "nextjs/tips/tips.md"
+      }
+    ]
+  },
+  {
+    "title": "OpenShift",
+    "children": [
+      {
+        "title": "OpenShift",
+        "path": "openshift/openshift.md"
+      }
+    ]
+  },
+  {
+    "title": "OpenStack",
+    "children": [
+      {
+        "title": "Deploy",
+        "path": "openstack/deploy/deploy.md"
+      }
+    ]
+  },
+  {
+    "title": "OS",
+    "children": [
+      {
+        "title": "Linux",
+        "path": "os/linux/linux.md"
+      }
+    ]
+  },
+  {
+    "title": "Python",
+    "children": [
+      {
+        "title": "Basic",
+        "path": "python/basic/basic.md"
+      },
+      {
+        "title": "Practical",
+        "path": "python/practical/practical.md"
+      },
+      {
+        "title": "Tips",
+        "path": "python/tips/tips.md"
+      }
+    ]
+  },
+  {
+    "title": "Remote",
+    "children": [
+      {
+        "title": "Guacamole",
+        "path": "remote/guacamole/guacamole.md"
+      }
+    ]
+  },
+  {
+    "title": "SQL",
+    "children": [
+      {
+        "title": "MySQL",
+        "path": "sql/mysql/mysql.md"
+      }
+    ]
+  },
+  {
+    "title": "Terraform",
+    "children": [
+      {
+        "title": "Terraform Cloud",
+        "path": "terraform/terraformcloud/terraformcloud.md"
+      }
+    ]
+  },
+  {
+    "title": "Swagger",
+    "path": "swagger/swagger.md"
+  },
+  {
+    "title": "Feature tour",
+    "path": "tour/index.md",
+    "children": [
+      {
+        "title": "Same-day article A",
+        "path": "tour/same-day-a.md"
+      },
+      {
+        "title": "Same-day article B",
+        "path": "tour/same-day-b.md"
+      },
+      {
+        "title": "Nested level 2",
+        "children": [
+          {
+            "title": "Nested level 3",
+            "children": [
+              {
+                "title": "Deep article",
+                "path": "tour/nested/deeper/deep.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Draft (hidden)",
+        "path": "tour/draft.md"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "title": "AI",
+    "children": [
+      {
+        "title": "Bedrock",
+        "path": "ai/bedrock.md"
+      },
+      {
+        "title": "Claude",
+        "path": "ai/claude.md"
+      }
+    ]
+  },
+  {
+    "title": "AWS",
+    "children": [
+      {
+        "title": "Session Manager",
+        "path": "aws/sessionmanager/sessionmanager.md"
+      }
+    ]
+  },
+  {
+    "title": "Azure",
+    "path": "azure/README.md",
+    "children": [
+      {
+        "title": "Certifications",
+        "children": [
+          {
+            "title": "AI 900",
+            "path": "azure/cert/ai900.md"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "children": [
+      {
+        "title": "a",
+        "path": "tools/a.md"
+      },
+      {
+        "title": "b",
+        "path": "tools/b.md"
+      }
+    ]
+  },
+  {
+    "title": "Usage",
+    "path": "_index.md"
+  }
+]

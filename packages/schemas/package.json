@@ -1,0 +1,22 @@
+{
+  "name": "@notes/schemas",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./api": "./src/api.ts",
+    "./query": "./src/query.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "generate": "node scripts/generate.ts",
+    "check": "node scripts/generate.ts --check && vitest run test/openapi-drift.test.ts"
+  },
+  "dependencies": {
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "vitest": "5.0.3"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "comment": "Shared search cases. The Go search (server) and the browser search (static export) must both satisfy every case. Snippets are HTML.",
+  "cases": [
+    {
+      "name": "title match ranks above body-only matches",
+      "query": "kafka",
+      "ids": [
+        "kafka/deploy",
+        "notes/streams"
+      ],
+      "snippets": {
+        "kafka/deploy": "<mark>Kafka</mark> deploy",
+        "notes/streams": "…We compared <mark>kafka</mark> …"
+      }
+    },
+    {
+      "name": "case-insensitive",
+      "query": "KAFKA",
+      "ids": [
+        "kafka/deploy",
+        "notes/streams"
+      ],
+      "snippets": {
+        "kafka/deploy": "<mark>Kafka</mark> deploy",
+        "notes/streams": "…We compared <mark>kafka</mark> …"
+      }
+    },
+    {
+      "name": "Japanese substring",
+      "query": "本語の",
+      "ids": [
+        "jp/memo"
+      ],
+      "snippets": {
+        "jp/memo": "日本語メモ。これは日<mark>本語の</mark>テキストで…"
+      }
+    },
+    {
+      "name": "multiple terms are ANDed",
+      "query": "bucket policy",
+      "ids": [
+        "aws/s3"
+      ],
+      "snippets": {
+        "aws/s3": "…A <mark>bucket</mark> <mark>policy</mark> gr…"
+      }
+    },
+    {
+      "name": "terms shorter than three characters are dropped",
+      "query": "go basics",
+      "ids": [
+        "go/basics"
+      ],
+      "snippets": {
+        "go/basics": "Go <mark>basics</mark>. func ma…"
+      }
+    },
+    {
+      "name": "operator characters are literal",
+      "query": "\"foo* OR (bar"
+    },
+    {
+      "name": "NEAR is a plain word",
+      "query": "NEAR care",
+      "ids": [
+        "aws/s3"
+      ],
+      "snippets": {
+        "aws/s3": "… (with <mark>NEAR</mark> <mark>care</mark>)."
+      }
+    },
+    {
+      "name": "markup in the text is escaped in snippets",
+      "query": "alert",
+      "ids": [
+        "web/escape"
+      ],
+      "snippets": {
+        "web/escape": "…cript&gt;<mark>alert</mark>(1)&lt;/sc…"
+      }
+    },
+    {
+      "name": "no match",
+      "query": "zebracorn"
+    },
+    {
+      "name": "too short after trimming",
+      "query": "  ab  ",
+      "error": "too_short"
+    },
+    {
+      "name": "only short terms",
+      "query": "ab cd",
+      "error": "too_short"
+    },
+    {
+      "name": "too long",
+      "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "error": "too_long"
+    }
+  ]
+}

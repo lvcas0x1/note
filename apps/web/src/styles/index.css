@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+/* JetBrains Mono (OFL-1.1), served from the site for readers without the font installed. */
+@import '@fontsource-variable/jetbrains-mono';
+@import '@fontsource-variable/jetbrains-mono/wght-italic.css';
+@import './chroma.css';
+@import './article.css';
+
+/* Light theme only: there are no dark: variants and no dark palette. */
+:root {
+  color-scheme: light;
+}
+
+/* Catppuccin Latte (https://catppuccin.com/palette/). Keep in sync with src/lib/palette.ts. */
+@theme {
+  --color-page: #f4f5f8; /* base mixed 30% with white: the terminal's 90%-opaque Latte look */
+  --color-surface: #eff1f5; /* base */
+  --color-crust: #dce0e8; /* crust */
+  --color-line: #ccd0da; /* surface0 */
+  --color-ink: #4c4f69; /* text */
+  --color-muted: #5c5f77; /* subtext1 */
+  --color-accent: #8839ef; /* mauve */
+  --color-accent-soft: #e5dff4; /* mauve 10% on base */
+  --color-mark: #ead3b4; /* yellow 30% on base */
+  --color-danger: #d20f39; /* red */
+  --color-danger-soft: #eddfe6; /* red 8% on base */
+  /* Code font: the terminal's JetBrainsMonoNL Nerd Font when installed, else the bundled JetBrains Mono. */
+  --font-mono:
+    'JetBrainsMonoNL Nerd Font', 'JetBrainsMonoNL NF', 'JetBrains Mono Variable', ui-monospace,
+    SFMono-Regular, Menlo, monospace;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-ink);
+}
+
+::selection {
+  background-color: var(--color-accent-soft);
+}

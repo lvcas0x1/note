@@ -1,0 +1,111 @@
+/* Typography for compiled article HTML (light theme only). */
+@layer components {
+  .article-body {
+    line-height: 1.75;
+  }
+  .article-body > * + * {
+    margin-top: 1rem;
+  }
+  /* Leave room for the sticky search bar when jumping to a heading. */
+  .article-body :is(h1, h2, h3, h4, h5, h6) {
+    scroll-margin-top: 4.5rem;
+  }
+  .article-body h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+  .article-body h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--color-line);
+    padding-bottom: 0.25rem;
+  }
+  .article-body h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+  .article-body h4,
+  .article-body h5,
+  .article-body h6 {
+    font-weight: 600;
+    margin-top: 1.25rem;
+  }
+  .article-body a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .article-body ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  .article-body ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+  }
+  .article-body li + li {
+    margin-top: 0.25rem;
+  }
+  .article-body li.task-list-item,
+  .article-body li:has(> input[type='checkbox']) {
+    list-style: none;
+    margin-left: -1.25rem;
+  }
+  .article-body blockquote {
+    border-left: 4px solid var(--color-line);
+    padding-left: 1rem;
+    color: var(--color-muted);
+  }
+  .article-body code,
+  .article-body pre {
+    font-family: var(--font-mono);
+    /* Like the terminal's NL (no ligatures) variant: show != and => as typed. */
+    font-variant-ligatures: none;
+    font-size: 0.875em;
+  }
+  .article-body :not(pre) > code {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 0.25rem;
+    padding: 0.1rem 0.3rem;
+  }
+  .article-body pre {
+    position: relative;
+    overflow-x: auto;
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+    padding: 0.875rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    /* Code blocks use the surface color (Latte base), one step darker than the page. */
+    background: var(--color-surface);
+  }
+  .article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+  .article-body th,
+  .article-body td {
+    border: 1px solid var(--color-line);
+    padding: 0.375rem 0.625rem;
+    text-align: left;
+  }
+  .article-body th {
+    background: var(--color-surface);
+  }
+  .article-body img {
+    max-width: 100%;
+    height: auto;
+  }
+  .article-body hr {
+    border-color: var(--color-line);
+  }
+  .article-body .footnotes {
+    font-size: 0.875rem;
+    color: var(--color-muted);
+  }
+}
