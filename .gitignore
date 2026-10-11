@@ -23,10 +23,43 @@ playwright-report/
 *.out
 /tmp/
 
-# Local settings and secrets
+# Secrets: this repository is public. Never commit credentials, keys, or
+# cloud state. If one is committed, rotate it; deleting the file is not enough.
 .env
 .env.*
 !.env.example
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.ppk
+.aws/
+.azure/
+.kube/
+kubeconfig*
+*.kubeconfig
+credentials
+credentials.json
+service-account*.json
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.netrc
+secrets/
+*.secret
+*.secrets
+
+# Local settings
 .claude/settings.local.json
 .idea/
 .vscode/*

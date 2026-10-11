@@ -236,8 +236,13 @@ committed (see `.gitignore`):
 | `static/`, `static-videos/`                                             | `npm run export`                        |
 | `coverage/`, `test-results/`, `playwright-report/`, `storybook-static/` | tests and Storybook                     |
 
-Also ignored: `.env*` (except `.env.example`), `.claude/settings.local.json`,
-editor folders, `.DS_Store`, and logs.
+Also ignored: secrets and cloud state (`.env*` except `.env.example`, private
+keys and certificates, `.aws/`, `.azure/`, `.kube/`, kubeconfig, credentials
+files, Terraform state and `*.tfvars`), `.claude/settings.local.json`, editor
+folders, `.DS_Store`, and logs.
 
-`content/` is committed, including drafts. Keep this repository private if the
-notes are private; publish only `static/`.
+**This repository is public.** Everything committed, including `content/` and
+drafts (`draft: true` hides an article from the site, not from Git), is
+published. Before committing, check text and screenshots for credentials, real
+hostnames, IP addresses, and account or tenant IDs. A leaked credential must be
+rotated; deleting it from the repository or its history is not enough.
